@@ -1,0 +1,7 @@
+# username,fullname,groups,email
+# Пример файла для массового создания пользователей
+# Формат: имя_пользователя,полное_имя,группа1:группа2,email
+
+ivanov,Иванов Иван Иванович,staff:developers,ivanov@company.local
+petrov,Петров Пётр Петрович,hr,petrov@company.local
+sidorov,Сидоров Сидор Сидорович,it:admins,sidorov@company.local

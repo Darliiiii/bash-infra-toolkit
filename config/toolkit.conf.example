@@ -1,0 +1,32 @@
+# Пример конфигурационного файла bash-infra-toolkit
+
+[general]
+# Уровень логирования: DEBUG, INFO, WARN, ERROR
+log_level = INFO
+
+# Директория для логов
+log_dir = /var/log/toolkit
+
+[user_manager]
+# Минимальная длина пароля
+min_password_length = 12
+
+# Shell по умолчанию
+default_shell = /bin/bash
+
+[preflight_check]
+# Порог дискового пространства (%)
+disk_threshold = 80
+
+# Порог оперативной памяти (%)
+memory_threshold = 90
+
+# Порты для проверки (через двоеточие)
+check_ports = 80:443:22
+
+[log_analyzer]
+# Путь к auth-логу
+auth_log = /var/log/secure
+
+# Максимальное количество записей в отчёте
+max_entries = 10
